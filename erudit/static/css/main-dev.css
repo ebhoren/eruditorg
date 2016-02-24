@@ -5774,7 +5774,11 @@ label.required:after {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-left: 15px; }
+  ul li,
+  ol li {
+    margin-bottom: 10px; }
   ul ul,
   ul ol,
   ol ul,
@@ -5797,8 +5801,7 @@ ol.inline, ul.inline {
     margin: 0;
     padding: 0; }
   ol.inline > li, ul.inline > li {
-    display: inline-block;
-    padding-right: 5px; }
+    display: inline-block; }
 
 /**
 * Definition List (DL)
@@ -5992,7 +5995,7 @@ section#article-detail {
     section#article-detail header.article-header hgroup h4 {
       font-size: 14px;
       margin-bottom: 5px; }
-    section#article-detail header.article-header hgroup h4.affiliation {
+    section#article-detail header.article-header hgroup .affiliation {
       margin-top: 7.33333px;
       margin-bottom: 0; }
     section#article-detail header.article-header hgroup p {

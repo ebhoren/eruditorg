@@ -1371,9 +1371,9 @@
   </xsl:template>
   <!-- biblio -->
   <xsl:template match="biblio">
-      <ul class="{name()}" role="note">
+      <!-- <ul class="{name()}" role="note"> -->
           <xsl:apply-templates/>
-      </ul>
+      <!-- </ul> -->
   </xsl:template>
   <xsl:template match="divbiblio">
       <div class="divbiblio">
@@ -1381,13 +1381,13 @@
       </div>
   </xsl:template>
   <xsl:template match="biblio/titre">
-      <h2 class="{name()}">
+      <h5 class="{name()}">
           <xsl:apply-templates/>
-      </h2>
+      </h5>
   </xsl:template>
   <xsl:template match="refbiblio">
       <xsl:variable name="valeurNO" select="no"/>
-      <li class="refbiblio">
+      <article class="refbiblio" role="note">
           <a class="no" id="{@id}">
               <xsl:choose>
                   <xsl:when test="$valeurNO">
@@ -1400,7 +1400,7 @@
           <xsl:apply-templates select="node()[name() != 'idpublic' and name() != 'no']"/>
           <xsl:text></xsl:text>
           <xsl:apply-templates select="idpublic"/>
-      </li>
+      </article>
   </xsl:template>
 
 <!--=== LISTE TAB / LISTE FIG ===-->
@@ -1578,13 +1578,13 @@
 	</xsl:template>
 
 	<xsl:template match="auteur/affiliation" mode="lim">
-		<h4 class="affiliation">
+		<div class="affiliation">
 			<xsl:apply-templates select="fonction"/>
 			<xsl:apply-templates select="divorg"/>
 			<xsl:apply-templates select="nomorg"/>
 			<xsl:apply-templates select="adresse"/>
 			<xsl:apply-templates select="alinea"/>
-		</h4>
+		</div>
 	</xsl:template>
 
 	<xsl:template match="admin//membre | admin//fonction | admin//divorg | admin//nomorg | admin//adresse | article//affiliation/alinea" mode="lim">

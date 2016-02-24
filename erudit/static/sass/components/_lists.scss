@@ -6,6 +6,13 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: ($line-height-computed / 2);
+  margin-left: 15px;
+
+  li {
+    margin-bottom: ($line-height-computed / 2);
+  }
+
+  // nested
   ul,
   ol {
     margin-bottom: 0;
@@ -36,7 +43,6 @@ ol,ul {
 
     > li {
       display: inline-block;
-      padding-right: 5px;
     }
   }
 
