@@ -99,6 +99,46 @@ section#article-detail {
   */
   .article-body {
     padding-top: $margin-vertical-default;
+
+    // first level headings
+    h4 {
+      margin-bottom: $margin-vertical-default/2;
+      @include fw-bold();
+    }
+
   }
+
+  /**
+  * article body sections defaults
+  */
+  .article-section {
+    margin-bottom: $margin-vertical-default*2;
+  }
+
+  /**
+  * each resume
+  */
+  .resume {
+    margin-bottom: $margin-vertical-default*2;
+  }
+
+  /**
+  * keywords
+  */
+  .keywords {
+    margin-top: $margin-vertical-default/2;
+    h5 {
+      display: inline-block;
+      @include fw-bold();
+    }
+    ul {
+      display: inline-block;
+      @media (max-width: $screen-xs-max) {
+        display: block;
+      }
+    }
+  }
+
+
 
 }

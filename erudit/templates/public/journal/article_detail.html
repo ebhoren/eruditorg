@@ -17,15 +17,17 @@
 <section id="article-detail" class="container">
 
   {% if not article_access_granted %}
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="alert alert-warning">
-            {% trans "Vous ne pouvez pas accéder à cette ressource!" %}
-          </div>
+
+    <div class="row">
+      <header class="col-md-12">
+        <div class="alert alert-warning">
+          <p class="no-margin">
+              {% trans "Vous ne pouvez pas accéder à cette ressource!" %}
+          </p>
         </div>
-      </div>
+      </header>
     </div>
+
   {% endif %}
 
   {% render_article article %}
