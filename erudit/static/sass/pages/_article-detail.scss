@@ -93,6 +93,13 @@ section#article-detail {
 
   }
 
+  /**
+  * article table of contents
+  */
+  .article-table-of-contents {
+    padding-top: $margin-vertical-default;
+  }
+
 
   /**
   * Article body
@@ -103,6 +110,7 @@ section#article-detail {
     // first level headings
     h4 {
       margin-bottom: $margin-vertical-default/2;
+      font-size: $font-size-h2;
       @include fw-bold();
     }
 

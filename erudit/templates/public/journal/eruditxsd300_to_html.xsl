@@ -120,12 +120,13 @@
 		<!-- <hr/> -->
 
 		<!--=== plan de l'article ===-->
-		<div class="row article-body border-top">
+		<div class="row border-top">
 			<xsl:if test="//corps">
-				<aside class="col-md-4" role="contents">
-
-						<h2>Plan de l’article</h2>
+				<aside class="col-md-4 article-table-of-contents" role="contents">
 						<nav>
+							<header>
+								<h4>Plan de l’article</h4>
+							</header>
 							<ul class="unstyled">
 								<li class="debutArticle">
 									<a href="#top">
@@ -182,7 +183,7 @@
 				</aside>
 			</xsl:if>
 
-			<aside class="col-md-8">
+			<aside class="article-body col-md-8">
 
 				<!-- ********* Resume ******** -->
 				<xsl:if test="//resume">

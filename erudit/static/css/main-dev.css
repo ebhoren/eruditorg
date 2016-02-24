@@ -5946,6 +5946,9 @@ section#article-detail {
   * main article header
   */
   /**
+  * article table of contents
+  */
+  /**
   * Article body
   */
   /**
@@ -5999,10 +6002,13 @@ section#article-detail {
     @media (max-width: 767px) {
       section#article-detail header.article-header figure.journal-logo img {
         float: none; } }
+  section#article-detail .article-table-of-contents {
+    padding-top: 44px; }
   section#article-detail .article-body {
     padding-top: 44px; }
     section#article-detail .article-body h4 {
       margin-bottom: 22px;
+      font-size: 30px;
       font-family: "Maax-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   section#article-detail .article-section {
     margin-bottom: 88px; }
