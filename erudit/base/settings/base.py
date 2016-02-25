@@ -126,6 +126,7 @@ PIPELINE = {
                 'vendor/jquery/dist/jquery.js',
                 'vendor/bootstrap-sass/assets/javascripts/bootstrap.js',
                 'vendor/inline-svg/dist/inlineSVG.min.js',
+                'vendor/sticky-kit/jquery.sticky-kit.js'
             ),
             'output_filename': 'js/erudit-vendors.min.js',
         },
@@ -136,6 +137,12 @@ PIPELINE = {
                 'scripts/sections/*.js',
             ),
             'output_filename': 'js/erudit-scripts.min.js',
+        },
+        'modernizr': {
+            'source_filenames': (
+                'js/build/modernizr-dev.js',
+            ),
+            'output_filename': 'js/modernizr.min.js',
         },
         'pdfjs': {
             'source_filenames': (
