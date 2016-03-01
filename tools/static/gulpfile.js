@@ -109,7 +109,7 @@ gulp.task('iconfont', function(){
       timestamp: runTimestamp
     }))
     .on('glyphs', function(glyphs, options) {
-      // CSS templating, e.g. 
+      // CSS templating, e.g.
       gulp.src(iconfont_dir + 'template.scss')
         .pipe(consolidate('lodash', {
           glyphs: glyphs,

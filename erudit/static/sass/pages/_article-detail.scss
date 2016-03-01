@@ -214,7 +214,7 @@ section#article-detail {
       }
 
       // second level ol
-      ol {        
+      ol {
         li {
           padding: 0.25em 0;
         }
@@ -362,8 +362,11 @@ section#article-detail {
       }
 
       .source {
-        @include fw-serif-bold-italic();
+        @include fw-serif-bold();
         font-size: 14px;
+        em, i {
+          @include fw-serif-bold-italic();
+        }
       }
     }
 

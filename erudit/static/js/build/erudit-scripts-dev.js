@@ -110,6 +110,7 @@ ROUTER.registerController('public:home', {
   	this.layout();
     this.sticky_elements();
     this.smooth_scroll();
+<<<<<<< HEAD
   },
 
   layout : function () {
@@ -127,6 +128,27 @@ ROUTER.registerController('public:home', {
   	$('#homepage-content .homepage--sticky-nav').stick_in_parent();
   },
 
+=======
+  },
+
+  layout : function () {
+
+  	var window_height 		= $(window).height(),
+  		sticky_nav_height 	= $('#homepage-content .homepage--sticky-nav').outerHeight(),
+  		header_height 		= window_height / 3 >> 0,
+  		search_height 		= window_height - header_height - sticky_nav_height;
+
+  	$('#homepage-header').css('height', header_height);
+  	$('#homepage-content .search-module').css('height', search_height);
+
+  	console.log( window_height, sticky_nav_height, header_height, search_height );
+  },
+
+  sticky_elements : function () {
+  	$('#homepage-content .homepage--sticky-nav').stick_in_parent();
+  },
+
+>>>>>>> c5029aa... Homepage merged
   smooth_scroll : function () {
   	$('#homepage-content .homepage--sticky-nav').on('click', 'a', function(e) {
   		if( e ) {
@@ -183,6 +205,7 @@ ROUTER.registerController('public:journal:article-detail', {
 
 });
 
+<<<<<<< HEAD
 ROUTER.registerController('public:journal:journal-list', {
 
   init: function() {
@@ -207,6 +230,8 @@ ROUTER.registerController('public:journal:journal-list', {
 
 });
 
+=======
+>>>>>>> c5029aa... Homepage merged
 ROUTER.registerController('userspace:editor:form', {
   init: function() {
     var journals = $('#id_editor_form_metadata').data('journals');
@@ -214,6 +239,7 @@ ROUTER.registerController('userspace:editor:form', {
       $("#id_contact").val("");
       $("#id_contact").find("option").hide();
     }
+<<<<<<< HEAD
 
     resetContactField();
     $("#id_journal").change(function(){
@@ -248,5 +274,18 @@ ROUTER.registerController('userspace:editor:form', {
     $('form').submit(checkUploads);
     $('a:not(form a)').click(checkUploads);
     window.onbeforeunload = checkUploads;
+=======
+    $(document).ready(function() {
+      resetContactField();
+      $("#id_journal").change(function(){
+        var journal_id = $(this).val();
+        var members = journals[journal_id];
+        resetContactField();
+        for (len = members.length, i=0; i<len; ++i) {
+          $("#id_contact").find("option[value='"+members[i]+"']").show();
+        }
+      });
+    });
+>>>>>>> c5029aa... Homepage merged
   },
 });

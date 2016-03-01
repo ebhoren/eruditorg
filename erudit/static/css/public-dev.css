@@ -1842,10 +1842,17 @@ ul.unstyled, ol.unstyled {
   color: #ff4242; }
 
 .color-white {
+<<<<<<< HEAD:erudit/static/css/public-dev.css
   color: #fff; }
 
 .color-black {
   color: #000; }
+=======
+  color: #ffffff; }
+
+.color-black {
+  color: #000000; }
+>>>>>>> c5029aa... Homepage merged:erudit/static/css/main-dev.css
 
 .color-dark-grey {
   color: #707070; }
@@ -1909,7 +1916,11 @@ nav#main-nav {
     position: relative;
     padding-right: 25px;
     font-family: "Maax-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+<<<<<<< HEAD:erudit/static/css/public-dev.css
     nav#main-nav a.main-section:hover {
+=======
+    .public nav#main-nav a.main-section:hover {
+>>>>>>> c5029aa... Homepage merged:erudit/static/css/main-dev.css
       color: #ff4242;
       text-decoration: none; }
     nav#main-nav a.main-section i {
@@ -1927,6 +1938,69 @@ nav#main-nav {
     position: relative;
     bottom: -5px; }
 
+<<<<<<< HEAD:erudit/static/css/public-dev.css
+=======
+/**
+* User space
+*/
+.userspace nav.navbar {
+  background-color: #ff4242;
+  border: 0;
+  line-height: 70px;
+  width: 100%; }
+  .userspace nav.navbar a {
+    color: #FFF; }
+  .userspace nav.navbar .navbar-logo {
+    width: 250px;
+    height: 70px;
+    margin-left: 15px;
+    display: inline-block; }
+    .userspace nav.navbar .navbar-logo img {
+      height: 40px; }
+  .userspace nav.navbar .navbar-user {
+    right: 15px;
+    position: absolute;
+    display: inline-block; }
+    .userspace nav.navbar .navbar-user a {
+      cursor: pointer; }
+      .userspace nav.navbar .navbar-user a:hover, .userspace nav.navbar .navbar-user a:active, .userspace nav.navbar .navbar-user a:focus, .userspace nav.navbar .navbar-user a:active:focus {
+        text-decoration: none; }
+    .userspace nav.navbar .navbar-user .profile-pic {
+      background: #FFF;
+      color: #000;
+      height: 40px;
+      width: 40px;
+      font-size: 20px;
+      padding: 10px 0;
+      margin-right: 10px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      border-radius: 20px;
+      vertical-align: middle;
+      text-align: center; }
+    .userspace nav.navbar .navbar-user .dropdown-menu {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 0; }
+      .userspace nav.navbar .navbar-user .dropdown-menu li {
+        border-bottom: 1px solid #f7f7f7; }
+        .userspace nav.navbar .navbar-user .dropdown-menu li a {
+          color: #707070;
+          padding: 10px; }
+          .userspace nav.navbar .navbar-user .dropdown-menu li a.disabled {
+            color: #f7f7f7; }
+            .userspace nav.navbar .navbar-user .dropdown-menu li a.disabled:hover, .userspace nav.navbar .navbar-user .dropdown-menu li a.disabled:active, .userspace nav.navbar .navbar-user .dropdown-menu li a.disabled:focus, .userspace nav.navbar .navbar-user .dropdown-menu li a.disabled:active:focus {
+              cursor: default;
+              background: none;
+              color: #f7f7f7; }
+        .userspace nav.navbar .navbar-user .dropdown-menu li:last-child {
+          border: 0; }
+
+>>>>>>> c5029aa... Homepage merged:erudit/static/css/main-dev.css
 nav.sidenav {
   z-index: 10;
   display: block;
@@ -2650,6 +2724,7 @@ dl dd {
     font-size: 1.15em;
     text-transform: uppercase; }
 
+<<<<<<< HEAD:erudit/static/css/public-dev.css
 /**
 * various page headers
 */
@@ -2673,6 +2748,8 @@ dl dd {
     .page-header-main figure.logo img {
       float: none; } }
 
+=======
+>>>>>>> c5029aa... Homepage merged:erudit/static/css/main-dev.css
 #homepage-header {
   padding-top: 30px;
   min-height: 200px;
@@ -3256,8 +3333,10 @@ section#article-detail {
       section#article-detail .article-body blockquote h1, section#article-detail .article-body blockquote h2, section#article-detail .article-body blockquote h3, section#article-detail .article-body blockquote h4, section#article-detail .article-body blockquote h5, section#article-detail .article-body blockquote p, section#article-detail .article-body cite h1, section#article-detail .article-body cite h2, section#article-detail .article-body cite h3, section#article-detail .article-body cite h4, section#article-detail .article-body cite h5, section#article-detail .article-body cite p {
         font-family: "FreightTextBookItalic", Georgia, "Times New Roman", Times, serif; }
       section#article-detail .article-body blockquote .source, section#article-detail .article-body cite .source {
-        font-family: "FreightTextBoldItalic", Georgia, "Times New Roman", Times, serif;
+        font-family: "FreightTextBold", Georgia, "Times New Roman", Times, serif;
         font-size: 14px; }
+        section#article-detail .article-body blockquote .source em, section#article-detail .article-body blockquote .source i, section#article-detail .article-body cite .source em, section#article-detail .article-body cite .source i {
+          font-family: "FreightTextBoldItalic", Georgia, "Times New Roman", Times, serif; }
   section#article-detail .article-section {
     margin-bottom: 88px; }
   section#article-detail .resume {
