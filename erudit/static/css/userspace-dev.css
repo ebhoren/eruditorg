@@ -1533,6 +1533,14 @@ h1, h2, h3, h4, h5, h6,
     font-weight: normal;
     line-height: 1;
     color: #979797; }
+  h1.border-top, h2.border-top, h3.border-top, h4.border-top, h5.border-top, h6.border-top,
+  .h1.border-top, .h2.border-top, .h3.border-top, .h4.border-top, .h5.border-top, .h6.border-top {
+    padding-top: 11px;
+    border-top: 1px solid #000; }
+  h1.border-bottom, h2.border-bottom, h3.border-bottom, h4.border-bottom, h5.border-bottom, h6.border-bottom,
+  .h1.border-bottom, .h2.border-bottom, .h3.border-bottom, .h4.border-bottom, .h5.border-bottom, .h6.border-bottom {
+    padding-bottom: 11px;
+    border-bottom: 1px solid #000; }
 
 h1, .h1,
 h2, .h2,
@@ -1885,7 +1893,7 @@ nav.sidenav {
   width: 250px;
   height: 100%;
   background-color: #FFF;
-  border-right: 1px solid #acacac;
+  border-right: 1px solid #979797;
   -webkit-transition: all, 300ms, ease;
   -o-transition: all, 300ms, ease;
   transition: all, 300ms, ease; }
@@ -1902,22 +1910,22 @@ nav.sidenav {
         height: 50px;
         line-height: 50px;
         font-size: 12px;
-        color: #393939;
+        color: #333333;
         display: table;
         width: 100%; }
         nav.sidenav ul li a:hover, nav.sidenav ul li a:active, nav.sidenav ul li a:focus, nav.sidenav ul li a:active:focus {
           text-decoration: none;
-          border-color: #acacac;
-          background-color: #acacac;
-          color: #393939; }
+          border-color: #979797;
+          background-color: #979797;
+          color: #222222; }
         nav.sidenav ul li a.active {
-          background-color: #E5E5E5; }
+          background-color: #979797; }
         nav.sidenav ul li a.disabled {
-          color: #acacac; }
+          color: #979797; }
           nav.sidenav ul li a.disabled:hover, nav.sidenav ul li a.disabled:active, nav.sidenav ul li a.disabled:focus, nav.sidenav ul li a.disabled:active:focus {
             cursor: default;
             background: none;
-            color: #acacac; }
+            color: #979797; }
   nav.sidenav .icon {
     font-size: 25px;
     margin-right: 10px;
@@ -2014,9 +2022,9 @@ table {
     padding: 1em 0.5em; }
   table thead th {
     white-space: nowrap;
-    color: #737373; }
+    color: #333333; }
   table tbody tr {
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid #979797;
     counter-increment: row-number; }
     table tbody tr:last-child {
       border: 0; }
@@ -2024,7 +2032,7 @@ table {
     vertical-align: top; }
     table tbody td.table-ordered_row:before {
       content: counter(row-number);
-      color: #acacac; }
+      color: #979797; }
     table tbody td.table-date {
       white-space: nowrap; }
   table tbody th.multicol {
@@ -2095,12 +2103,12 @@ fieldset {
 legend {
   letter-spacing: 1px;
   font-size: 18.9px;
-  color: #393939; }
+  color: #333333; }
 
 /* labels */
 label {
   margin: 0.25em 0;
-  color: #393939;
+  color: #333333;
   font-weight: normal;
   display: block; }
 
@@ -2129,8 +2137,8 @@ input[list],
   height: 42px;
   border-width: 1px;
   border-style: solid;
-  border-color: #acacac;
-  color: #393939;
+  border-color: #979797;
+  color: #333333;
   background: transparent;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -2241,9 +2249,9 @@ input[type="image"],
 .btn, .btn-default {
   cursor: pointer;
   padding: 9px 13.5px;
-  border: 1px solid #393939;
+  border: 1px solid #333333;
   border-radius: 0px;
-  color: #393939;
+  color: #333333;
   margin: 0.75em 0.75em 0 0;
   -webkit-transition: all, 300ms, ease;
   -o-transition: all, 300ms, ease;
@@ -2276,9 +2284,9 @@ input[type="image"],
   .btn:active,
   .btn:focus,
   .btn:active:focus, .btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:active:focus {
-    color: #E5E5E5;
-    background-color: #424242;
-    border: 1px solid #424242; }
+    color: #979797;
+    background-color: #3b3b3b;
+    border: 1px solid #3b3b3b; }
 
 /* primary call-to-actions and submit buttons */
 button[type="submit"],
@@ -2323,14 +2331,14 @@ button[type="reset"],
 input[type="reset"] {
   border: none;
   text-decoration: underline;
-  color: #393939;
+  color: #333333;
   background-color: #FFF; }
   button[type="reset"]:hover, button[type="reset"]:active, button[type="reset"]:focus, button[type="reset"]:active:focus,
   input[type="reset"]:hover,
   input[type="reset"]:active,
   input[type="reset"]:focus,
   input[type="reset"]:active:focus {
-    color: #393939;
+    color: #333333;
     background: none;
     border: none;
     text-decoration: none; }
@@ -2343,13 +2351,13 @@ select[disabled],
 option[disabled],
 button[disabled] {
   cursor: not-allowed;
-  color: #737373;
-  background-color: #E5E5E5; }
+  color: #979797;
+  background-color: #eeeeee; }
 
 /* required or optional input labels */
 label.required:after {
   content: ' *';
-  color: #acacac;
+  color: #979797;
   font-weight: bold;
   font-size: 0.85em; }
 
@@ -2455,7 +2463,7 @@ label.required:after {
 */
 #breadcrumb {
   margin-bottom: 44px;
-  color: #979797; }
+  padding-bottom: 11px; }
   #breadcrumb p {
     font-size: 14px; }
   #breadcrumb a {
@@ -2544,8 +2552,43 @@ dl dd {
   .dl-horizontal dd {
     margin-left: 40px; } }
 
+/**
+* sidebar block
+*/
+.sidebar-block {
+  margin-bottom: 44px; }
+  .sidebar-block > header {
+    margin-bottom: 22px; }
+
+/**
+* Collapse accordion
+*/
+.collapse-group a[data-toggle="collapse"] i.collapse-chevron {
+  font-size: 18px;
+  position: relative;
+  top: 10px; }
+
+.collapse-group .panel-collapse {
+  overflow: hidden; }
+
+.collapse-group .collapsing {
+  -webkit-transition: height 500ms;
+  -o-transition: height 500ms;
+  transition: height 500ms; }
+
+.collapse-group .collapse {
+  overflow: hidden;
+  height: 0; }
+  .collapse-group .collapse.in {
+    height: auto;
+    overflow: visible; }
+
+/**
+* default panels
+*/
 .panel-group {
-  margin: 20px; }
+  margin: 20px;
+  border: 1px solid red; }
   .panel-group .panel {
     box-shadow: none;
     -webkit-border-radius: 0;
@@ -2574,14 +2617,14 @@ dl dd {
     .login-page label:not(.required):after {
       content: ''; }
   .login-page input {
-    border: 1px solid #acacac; }
+    border: 1px solid #979797; }
   .login-page small {
-    color: #acacac;
+    color: #979797;
     font-size: 0.85em; }
   .login-page .erudit-logo {
     margin: 25px 0 30px 0;
     padding-bottom: 30px;
-    border-bottom: 1px solid #E5E5E5; }
+    border-bottom: 1px solid #979797; }
     .login-page .erudit-logo img {
       width: 35%;
       margin: auto; }

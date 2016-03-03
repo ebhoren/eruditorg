@@ -9,12 +9,60 @@
   }
 }
 
+/**
+* Collapse accordion
+*/
+
+.collapse-group {
+
+  a[data-toggle="collapse"] {
+    i.collapse-chevron {
+      font-size: 18px;
+      position: relative;
+      top: 10px;
+    }
+    // position: relative;
+    // i.collapse-chevron {
+    //   @include transition(transform 150ms);
+    //   // @include rotate(180deg);
+    // }
+    // &.collapsed {
+    //   i.collapse-chevron {
+    //     top: -5px;
+    //     @include rotate(180deg);
+    //   }
+    // }
+  }
+
+  .panel-collapse {
+    overflow: hidden;
+  }
+
+  .collapsing {
+    @include transition(height 500ms);
+  }
+
+  .collapse {
+    overflow: hidden;
+    height: 0;
+    &.in {
+      height: auto;
+      overflow: visible;
+    }
+  }
+
+
+}
+
+
+
 
 /**
 * default panels
 */
 .panel-group {
   margin: 20px;
+  border: 1px solid red;
   .panel {
     box-shadow: none;
     @include border-radius(0);
