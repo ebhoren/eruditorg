@@ -101,16 +101,6 @@ section#article-detail {
       }
     }
 
-    // logo is pushed to right
-    figure.journal-logo {
-      img {
-        float: right;
-        @media (max-width: $screen-xs-max) {
-          float: none;
-        }
-      }
-    }
-
   }
 
   /**

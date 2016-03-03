@@ -255,7 +255,7 @@ body {
   font-family: "Maax", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #333333;
+  color: #000;
   background-color: #fff; }
 
 input,
@@ -1555,7 +1555,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit; }
+  color: #000; }
   h1 small,
   h1 .small, h2 small,
   h2 .small, h3 small,
@@ -1573,6 +1573,14 @@ h1, h2, h3, h4, h5, h6,
     font-weight: normal;
     line-height: 1;
     color: #979797; }
+  h1.border-top, h2.border-top, h3.border-top, h4.border-top, h5.border-top, h6.border-top,
+  .h1.border-top, .h2.border-top, .h3.border-top, .h4.border-top, .h5.border-top, .h6.border-top {
+    padding-top: 11px;
+    border-top: 1px solid #000; }
+  h1.border-bottom, h2.border-bottom, h3.border-bottom, h4.border-bottom, h5.border-bottom, h6.border-bottom,
+  .h1.border-bottom, .h2.border-bottom, .h3.border-bottom, .h4.border-bottom, .h5.border-bottom, .h6.border-bottom {
+    padding-bottom: 11px;
+    border-bottom: 1px solid #000; }
 
 h1, .h1,
 h2, .h2,
@@ -1619,7 +1627,7 @@ h4, .h4 {
   font-size: 20px; }
 
 h5, .h5 {
-  font-size: 14px; }
+  font-size: 18px; }
 
 h6, .h6 {
   font-size: 12px; }
@@ -1888,8 +1896,13 @@ nav#main-nav {
     transform: translate(0, -50%); }
   nav#main-nav li {
     display: inline-block;
+<<<<<<< HEAD:erudit/static/css/public-dev.css
     margin-left: 22px; }
   nav#main-nav a.main-section {
+=======
+    margin-left: 44px; }
+  .public nav#main-nav a.main-section {
+>>>>>>> e508b54... journal detail, layout with sidebar:erudit/static/css/main-dev.css
     display: block;
     font-size: 16px;
     line-height: 14px;
@@ -2494,7 +2507,17 @@ label.required:after {
 */
 #breadcrumb {
   margin-bottom: 44px;
-  color: #979797; }
+  padding-bottom: 11px;
+  position: relative; }
+  #breadcrumb:after {
+    content: "";
+    display: block;
+    height: 1px;
+    border-top: 1px solid #000;
+    position: absolute;
+    left: 11px;
+    right: 11px;
+    bottom: 0; }
   #breadcrumb p {
     font-size: 14px; }
   #breadcrumb a {
@@ -2593,6 +2616,17 @@ dl dd {
   .dl-horizontal dd {
     margin-left: 40px; } }
 
+/**
+* sidebar block
+*/
+.sidebar-block {
+  margin-bottom: 44px; }
+  .sidebar-block > header {
+    margin-bottom: 22px; }
+
+/**
+* default panels
+*/
 .panel-group {
   margin: 20px; }
   .panel-group .panel {
@@ -2615,6 +2649,29 @@ dl dd {
   .panel-group .panel-title {
     font-size: 1.15em;
     text-transform: uppercase; }
+
+/**
+* various page headers
+*/
+.page-header-main hgroup {
+  padding-bottom: 44px; }
+
+.page-header-main h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.4em;
+  font-family: "Maax-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.page-header-main h3 {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-family: "Maax-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.page-header-main figure.logo img {
+  float: right; }
+  @media (max-width: 767px) {
+    .page-header-main figure.logo img {
+      float: none; } }
 
 #homepage-header {
   padding-top: 30px;
@@ -2900,6 +2957,24 @@ body.journal-list #breadcrumb {
       background: #f7f7f7; }
 
 /**
+* Generic elements for journals pages
+*/
+.meta-blocks li {
+  margin-bottom: 22px; }
+  .meta-blocks li h5 {
+    font-size: 12px;
+    margin: 0 0 4px 0; }
+  .meta-blocks li p {
+    margin: 0; }
+
+/**
+* Journal about page
+*/
+#journal-detail .journal-infos .journal-info-block {
+  border-top: 1px solid #000;
+  padding-top: 44px; }
+
+/**
 * page specific variables
 */
 /**
@@ -2982,7 +3057,7 @@ section#article-detail {
       font-size: 20px;
       font-family: "Maax-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     section#article-detail header.article-header hgroup h4 {
-      font-size: 14px;
+      font-size: 18px;
       margin-bottom: 5px; }
     section#article-detail header.article-header hgroup .affiliation {
       display: none; }
@@ -2991,11 +3066,6 @@ section#article-detail {
   section#article-detail header.article-header .meta-magazine .meta-magazine--title {
     display: block;
     margin-top: 5px; }
-  section#article-detail header.article-header figure.journal-logo img {
-    float: right; }
-    @media (max-width: 767px) {
-      section#article-detail header.article-header figure.journal-logo img {
-        float: none; } }
   section#article-detail header.article-header-sticky {
     position: fixed;
     top: 0;
@@ -3035,7 +3105,7 @@ section#article-detail {
         margin-bottom: 0;
         font-size: 20px; }
       section#article-detail header.article-header-sticky hgroup h4 {
-        font-size: 14px;
+        font-size: 18px;
         margin-bottom: 5px; }
       section#article-detail header.article-header-sticky hgroup .affiliation {
         margin-top: 7.33333px;
@@ -3059,7 +3129,7 @@ section#article-detail {
       section#article-detail .article-table-of-contents li.border-top:before {
         left: 0; }
       section#article-detail .article-table-of-contents li a {
-        color: #333333;
+        color: #000;
         text-decoration: none; }
         section#article-detail .article-table-of-contents li a.active, section#article-detail .article-table-of-contents li a:hover, section#article-detail .article-table-of-contents li a:active {
           color: #ff4242; }
@@ -3212,7 +3282,7 @@ section#article-detail {
     section#article-detail .keywords ul {
       display: inline-block;
       font-family: "Maax", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 14px; }
+      font-size: 18px; }
       @media (max-width: 767px) {
         section#article-detail .keywords ul {
           display: block; } }
@@ -3290,7 +3360,7 @@ section#article-detail {
         right: 11px;
         top: 0; }
       section#article-detail .related-articles article a {
-        color: #333333; }
+        color: #000; }
       section#article-detail .related-articles article h4 {
         margin-bottom: 22px; }
       section#article-detail .related-articles article h5 {

@@ -1,3 +1,18 @@
+/**
+* sidebar block
+*/
+
+.sidebar-block {
+  margin-bottom: $margin-vertical-default;
+  > header {
+    margin-bottom: $margin-vertical-default/2;
+  }
+}
+
+
+/**
+* default panels
+*/
 .panel-group {
   margin: 20px;
   .panel {
