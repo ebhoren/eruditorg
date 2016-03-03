@@ -2998,6 +2998,52 @@ body.journal-list #breadcrumb {
   #journal-detail footer.journal-issues {
     background-color: #eeeeee; }
 
+section#issue-detail .issue-detail--resume figure {
+  margin-bottom: 50px; }
+
+section#issue-detail .issue-detail--resume h2 {
+  padding-bottom: 40px; }
+
+section#issue-detail .issue-detail--resume small {
+  display: block;
+  margin-bottom: 10px; }
+
+section#issue-detail .issue-detail--meta_blocks {
+  padding-bottom: 11px;
+  border-bottom: 1px solid #000; }
+
+section#issue-detail .issue-detail--main-header h1 {
+  margin-bottom: 90px;
+  font-family: "Maax-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+section#issue-detail .issue-detail--main-header h2 {
+  font-size: 28px;
+  margin-bottom: 40px; }
+
+section#issue-detail .issue-detail--articles header h3 {
+  padding-top: 40px; }
+
+section#issue-detail .issue-detail--articles article {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  section#issue-detail .issue-detail--articles article h4 {
+    font-family: "Maax-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  section#issue-detail .issue-detail--articles article:last-child {
+    border-bottom: none; }
+
+section#issue-detail .issue-detail--footer {
+  background: #f7f7f7;
+  padding-top: 60px;
+  padding-bottom: 20px; }
+  section#issue-detail .issue-detail--footer header {
+    margin-bottom: 40px; }
+  section#issue-detail .issue-detail--footer .issue-detail--footer--item {
+    margin-bottom: 40px; }
+    section#issue-detail .issue-detail--footer .issue-detail--footer--item hr {
+      height: 1px;
+      background: #707070; }
+
 /**
 * page specific variables
 */
