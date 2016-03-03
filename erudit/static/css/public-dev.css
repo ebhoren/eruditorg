@@ -255,7 +255,7 @@ body {
   font-family: "Maax", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #000;
+  color: #333333;
   background-color: #fff; }
 
 input,
@@ -1555,7 +1555,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: #000; }
+  color: inherit; }
   h1 small,
   h1 .small, h2 small,
   h2 .small, h3 small,
@@ -1627,7 +1627,7 @@ h4, .h4 {
   font-size: 20px; }
 
 h5, .h5 {
-  font-size: 18px; }
+  font-size: 14px; }
 
 h6, .h6 {
   font-size: 12px; }
@@ -1842,17 +1842,10 @@ ul.unstyled, ol.unstyled {
   color: #ff4242; }
 
 .color-white {
-<<<<<<< HEAD:erudit/static/css/public-dev.css
   color: #fff; }
 
 .color-black {
   color: #000; }
-=======
-  color: #ffffff; }
-
-.color-black {
-  color: #000000; }
->>>>>>> c5029aa... Homepage merged:erudit/static/css/main-dev.css
 
 .color-dark-grey {
   color: #707070; }
@@ -1903,24 +1896,15 @@ nav#main-nav {
     transform: translate(0, -50%); }
   nav#main-nav li {
     display: inline-block;
-<<<<<<< HEAD:erudit/static/css/public-dev.css
     margin-left: 22px; }
   nav#main-nav a.main-section {
-=======
-    margin-left: 44px; }
-  .public nav#main-nav a.main-section {
->>>>>>> e508b54... journal detail, layout with sidebar:erudit/static/css/main-dev.css
     display: block;
     font-size: 16px;
     line-height: 14px;
     position: relative;
     padding-right: 25px;
     font-family: "Maax-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-<<<<<<< HEAD:erudit/static/css/public-dev.css
     nav#main-nav a.main-section:hover {
-=======
-    .public nav#main-nav a.main-section:hover {
->>>>>>> c5029aa... Homepage merged:erudit/static/css/main-dev.css
       color: #ff4242;
       text-decoration: none; }
     nav#main-nav a.main-section i {
@@ -1938,69 +1922,6 @@ nav#main-nav {
     position: relative;
     bottom: -5px; }
 
-<<<<<<< HEAD:erudit/static/css/public-dev.css
-=======
-/**
-* User space
-*/
-.userspace nav.navbar {
-  background-color: #ff4242;
-  border: 0;
-  line-height: 70px;
-  width: 100%; }
-  .userspace nav.navbar a {
-    color: #FFF; }
-  .userspace nav.navbar .navbar-logo {
-    width: 250px;
-    height: 70px;
-    margin-left: 15px;
-    display: inline-block; }
-    .userspace nav.navbar .navbar-logo img {
-      height: 40px; }
-  .userspace nav.navbar .navbar-user {
-    right: 15px;
-    position: absolute;
-    display: inline-block; }
-    .userspace nav.navbar .navbar-user a {
-      cursor: pointer; }
-      .userspace nav.navbar .navbar-user a:hover, .userspace nav.navbar .navbar-user a:active, .userspace nav.navbar .navbar-user a:focus, .userspace nav.navbar .navbar-user a:active:focus {
-        text-decoration: none; }
-    .userspace nav.navbar .navbar-user .profile-pic {
-      background: #FFF;
-      color: #000;
-      height: 40px;
-      width: 40px;
-      font-size: 20px;
-      padding: 10px 0;
-      margin-right: 10px;
-      -webkit-border-radius: 20px;
-      -moz-border-radius: 20px;
-      -ms-border-radius: 20px;
-      border-radius: 20px;
-      vertical-align: middle;
-      text-align: center; }
-    .userspace nav.navbar .navbar-user .dropdown-menu {
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      border-radius: 0;
-      box-shadow: none;
-      padding: 0; }
-      .userspace nav.navbar .navbar-user .dropdown-menu li {
-        border-bottom: 1px solid #f7f7f7; }
-        .userspace nav.navbar .navbar-user .dropdown-menu li a {
-          color: #707070;
-          padding: 10px; }
-          .userspace nav.navbar .navbar-user .dropdown-menu li a.disabled {
-            color: #f7f7f7; }
-            .userspace nav.navbar .navbar-user .dropdown-menu li a.disabled:hover, .userspace nav.navbar .navbar-user .dropdown-menu li a.disabled:active, .userspace nav.navbar .navbar-user .dropdown-menu li a.disabled:focus, .userspace nav.navbar .navbar-user .dropdown-menu li a.disabled:active:focus {
-              cursor: default;
-              background: none;
-              color: #f7f7f7; }
-        .userspace nav.navbar .navbar-user .dropdown-menu li:last-child {
-          border: 0; }
-
->>>>>>> c5029aa... Homepage merged:erudit/static/css/main-dev.css
 nav.sidenav {
   z-index: 10;
   display: block;
@@ -2581,17 +2502,7 @@ label.required:after {
 */
 #breadcrumb {
   margin-bottom: 44px;
-  padding-bottom: 11px;
-  position: relative; }
-  #breadcrumb:after {
-    content: "";
-    display: block;
-    height: 1px;
-    border-top: 1px solid #000;
-    position: absolute;
-    left: 11px;
-    right: 11px;
-    bottom: 0; }
+  padding-bottom: 11px; }
   #breadcrumb p {
     font-size: 14px; }
   #breadcrumb a {
@@ -2606,9 +2517,18 @@ label.required:after {
 #breadcrumb {
   margin-bottom: 0;
   padding: 44px 0; }
-  #breadcrumb p {
-    padding-bottom: 15px;
-    border-bottom: 1px solid #707070; }
+  #breadcrumb .container > .row > div {
+    position: relative;
+    padding-bottom: 15px; }
+    #breadcrumb .container > .row > div:after {
+      content: "";
+      display: block;
+      height: 1px;
+      border-top: 1px solid #000;
+      position: absolute;
+      left: 11px;
+      right: 11px;
+      bottom: 0; }
 
 /**
 * Unordered and Ordered lists
@@ -2724,7 +2644,6 @@ dl dd {
     font-size: 1.15em;
     text-transform: uppercase; }
 
-<<<<<<< HEAD:erudit/static/css/public-dev.css
 /**
 * various page headers
 */
@@ -2748,8 +2667,6 @@ dl dd {
     .page-header-main figure.logo img {
       float: none; } }
 
-=======
->>>>>>> c5029aa... Homepage merged:erudit/static/css/main-dev.css
 #homepage-header {
   padding-top: 30px;
   min-height: 200px;
@@ -3134,7 +3051,7 @@ section#article-detail {
       font-size: 20px;
       font-family: "Maax-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     section#article-detail header.article-header hgroup h4 {
-      font-size: 18px;
+      font-size: 14px;
       margin-bottom: 5px; }
     section#article-detail header.article-header hgroup .affiliation {
       display: none; }
@@ -3182,7 +3099,7 @@ section#article-detail {
         margin-bottom: 0;
         font-size: 20px; }
       section#article-detail header.article-header-sticky hgroup h4 {
-        font-size: 18px;
+        font-size: 14px;
         margin-bottom: 5px; }
       section#article-detail header.article-header-sticky hgroup .affiliation {
         margin-top: 7.33333px;
@@ -3206,7 +3123,7 @@ section#article-detail {
       section#article-detail .article-table-of-contents li.border-top:before {
         left: 0; }
       section#article-detail .article-table-of-contents li a {
-        color: #000;
+        color: #333333;
         text-decoration: none; }
         section#article-detail .article-table-of-contents li a.active, section#article-detail .article-table-of-contents li a:hover, section#article-detail .article-table-of-contents li a:active {
           color: #ff4242; }
@@ -3361,7 +3278,7 @@ section#article-detail {
     section#article-detail .keywords ul {
       display: inline-block;
       font-family: "Maax", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 18px; }
+      font-size: 14px; }
       @media (max-width: 767px) {
         section#article-detail .keywords ul {
           display: block; } }
@@ -3439,7 +3356,7 @@ section#article-detail {
         right: 11px;
         top: 0; }
       section#article-detail .related-articles article a {
-        color: #000; }
+        color: #333333; }
       section#article-detail .related-articles article h4 {
         margin-bottom: 22px; }
       section#article-detail .related-articles article h5 {

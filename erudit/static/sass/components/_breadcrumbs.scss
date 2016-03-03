@@ -5,7 +5,10 @@
 #breadcrumb {
   margin-bottom: $margin-vertical-default;
   padding-bottom: $margin-vertical-default/4;
-  @include grid-cell-border($direction: 'bottom');
+
+  // .container > .row > div {
+  //   @include grid-cell-border($direction: 'bottom');
+  // }
 
   p {
     font-size: 14px;

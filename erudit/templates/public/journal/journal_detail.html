@@ -32,7 +32,7 @@
               </p>
 
               <figure class="col-xs-3 no-padding">
-                <img src="{% url 'public:journal:issue-coverpage' latest_issue.pk %}" class="img-responsive" alt="{{ latest_issue.title }}" />
+                <a href="{{ latest_issue.get_absolute_url }}"><img src="{% url 'public:journal:issue-coverpage' latest_issue.pk %}" class="img-responsive" alt="{{ latest_issue.title }}" /></a>
               </figure>
 
             </div>
@@ -133,7 +133,7 @@
           {# Journal about #}
           <aside id="journal-about" class="col-sm-8 col-sm-pull-3">
 
-            <header class="row child-column-fit page-header-main">
+            <header class="page-header-main row">
                 <aside class="col-sm-8">
                   <hgroup>
                     <h2>{{ journal.name }}</h2>
@@ -150,31 +150,31 @@
             </header>
 
             {% if journal_info %}
-            <section class="journal-infos row child-column-fit">
+            <section class="journal-infos">
 
               {% trans "Aucune information" as tab_empty_msg %}
 
               {% if journal_info.about %}
-              <div class="journal-info-block col-xs-12">
+              <div class="journal-info-block">
                 <h3 class="h2">{% trans "À propos" %}</h3>
                 {{ journal_info.about|default:tab_empty_msg|safe }}
               </div>
               {% endif %}
 
               {% if journal_info.editorial_policy %}
-              <div class="journal-info-block col-xs-12">
+              <div class="journal-info-block">
                 {{ journal_info.editorial_policy|default:tab_empty_msg|safe }}
               </div>
               {% endif %}
 
               {% if journal_info.subscriptions %}
-              <div class="journal-info-block col-xs-12">
+              <div class="journal-info-block">
                 {{ journal_info.subscriptions|default:tab_empty_msg|safe }}
               </div>
               {% endif %}
 
               {% if journal_info.team %}
-              <div class="journal-info-block col-xs-12">
+              <div class="journal-info-block">
                 {{ journal_info.team|default:tab_empty_msg|safe }}
               </div>
               {% endif %}
